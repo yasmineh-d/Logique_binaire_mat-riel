@@ -70,3 +70,55 @@ Diviser le nombre par 16.
 
 Lire les restes de bas en haut.
 👉 Exemple : 173 → 0xAD
+
+
+ Opérateurs
+ 
+ 1. Définitions clés
+
+Bit : plus petite unité (0 ou 1).
+
+Octet (Byte) : groupe de 8 bits.
+
+Masque (mask) : valeur binaire utilisée pour tester ou modifier certains bits.
+
+LSB / MSB : bit de poids faible (droite) / fort (gauche).
+
+
+
+
+2. Opérateurs bit à bit
+Opérateur	Nom	Effet (sur 1 bit)
+&	AND	1 si les deux sont 1
+`	`	OR
+^	XOR	1 si différent
+~	NOT	inverse le bit
+
+⚠️ Différence entre && / || (logiques) et & / | (bit à bit).
+
+
+
+
+3. Décalages (Shifts)
+
+x << n : décale à gauche → multiplie par 2^n.
+
+x >> n : décale à droite → divise par 2^n.
+
+Logique : ajoute des 0.
+
+Arithmétique : conserve le signe (bits de gauche copiés).
+
+
+
+4. Masques pratiques
+
+Tester un bit : if (flags & (1 << k)) ...
+
+Poser un bit : flags |= (1 << k)
+
+Retirer un bit : flags &= ~(1 << k)
+
+Basculer un bit : flags ^= (1 << k)
+
+Extraire un champ : (val >> s) & mask
