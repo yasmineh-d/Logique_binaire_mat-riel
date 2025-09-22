@@ -1,4 +1,5 @@
 Numération binaire / hexadécimal & conversions
+
 1.Définitions clés
  Bit : plus petite unité d’information, peut valoir 0 ou 1
  Octet (Byte) : groupe de 8 bits. Exemple : 01010111
@@ -73,7 +74,7 @@ Lire les restes de bas en haut.
 
 
  Opérateurs
- 
+
  1. Définitions clés
 
 Bit : plus petite unité (0 ou 1).
